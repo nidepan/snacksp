@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="box">
+  <!-- 轮播图 -->
+  <view class="swiper">
+    <swiper class="home-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{list}}" wx:key="index">
+        <swiper-item class="item">
+          <image class="slide-image" src="{{item.url}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>    
+  </view>
+</view>

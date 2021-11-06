@@ -1,0 +1,15 @@
+/**index.wxss**/
+
+/*轮播控件*/
+.swiper {
+  padding: 10rpx;
+}
+.home-swiper {
+  width: 100%;
+  height: 300rpx;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
