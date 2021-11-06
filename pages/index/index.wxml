@@ -1,6 +1,11 @@
 <!--index.wxml-->
 <view class="box">
-  <!-- 轮播图 -->
+<!-- 背景图 -->
+<view class="nav">
+  <image src="../../images/bg.jpg" class="nav-img"></image>
+</view>
+<!-- 轮播图 -->
+<view class="swiper-box">
   <view class="swiper">
     <swiper class="home-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
       <block wx:for="{{list}}" wx:key="index">
@@ -10,4 +15,5 @@
       </block>
     </swiper>    
   </view>
+</view>
 </view>
