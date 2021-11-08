@@ -1,0 +1,22 @@
+{
+  "name": "snacksp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nidepan/snacksp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nidepan/snacksp/issues"
+  },
+  "homepage": "https://github.com/nidepan/snacksp#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.9.2"
+  }
+}

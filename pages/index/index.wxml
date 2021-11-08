@@ -7,7 +7,7 @@
 <!-- 轮播图 -->
 <view class="swiper-box">
   <view class="swiper">
-    <swiper class="home-swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <swiper class="home-swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
       <block wx:for="{{list}}" wx:key="index">
         <swiper-item class="item">
           <image class="slide-image" src="{{item.url}}"></image>
@@ -16,5 +16,45 @@
     </swiper>    
   </view>
 </view>
-<!-- 布局一行五个 -->
+<view class="bg"></view>
+<!-- 提示语部分 -->
+<view class="notification">
+  <van-notice-bar
+  left-icon="volume-o"
+  text="美食美客带您感受美味的世界 吃的是零食 回忆的是美好 与你同在每一天!"
+/>
+</view>
+<!-- 展示部分 -->
+<view class="exhibition" >
+  <van-grid column-num="5" >
+  <van-grid-item wx:for="{{listPriject}}" wx:key="index" wx:for-item="item" icon="{{item.img}}" text="{{item.text}}" />
+</van-grid>
+</view>
+<!-- 不买后悔部分 -->
+<view class="regret">
+  <view class="regret-top-list">
+    <van-icon name="like" class="regret-icon" />
+    <text class="regret-text">不买后悔系列</text>
+  </view>
+  <view class="regret-card">
+    <!-- <text>轮播图</text> -->
+    <swiper class="home-swiper"  autoplay="true" interval="5000" duration="1000" >
+      <block wx:for="{{list}}" wx:key="index">
+        <swiper-item class="items" >
+          <van-card
+            price="2.00"
+            desc="描述信息"
+            origin-price="1.00"
+            title="商品标题"
+            thumb="{{ imageURL }}"
+          >
+          <view slot="footer">
+            <image src="/icon/gw.png" class="cart"></image>
+          </view>
+          </van-card>
+        </swiper-item>
+      </block>
+    </swiper>    
+  </view>
+</view>
 </view>

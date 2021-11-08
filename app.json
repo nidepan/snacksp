@@ -10,7 +10,7 @@
     "navigationBarTitleText": "小馋猫零食",
     "navigationBarBackgroundColor": "#00a1d6",
     "navigationBarTextStyle":"black",
-    "backgroundColor": "#ffffff",
+    "backgroundColor": "#F5F5F5",
     "navigationStyle": "custom"
   },
   "tabBar": {
@@ -46,6 +46,5 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
